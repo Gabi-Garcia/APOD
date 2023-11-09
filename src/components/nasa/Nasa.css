@@ -1,0 +1,38 @@
+.divNasa{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:100%;
+    background-image:url('../nasa/endless-constellation.svg');
+    color: white;
+    font-size: 1rem;
+    gap: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+    border:5px solid green;
+}
+
+.divNasa input{
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.divNasa p{
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+.divNasa img{
+    margin-top: 20px;
+    width:70%;
+    height:100vh;
+    border-radius:15px;
+}
