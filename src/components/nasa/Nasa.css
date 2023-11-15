@@ -1,17 +1,18 @@
+@media(min-width:769px) and (max-width:1500px) {
+
 .divNasa{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width:100%;
-    background-image:url('../nasa/endless-constellation.svg');
-    color: white;
+    color: black;
     font-size: 1rem;
     gap: 10px;
-    border-radius: 20px;
+    border-radius:0px;
     object-fit: cover;
-    border:5px solid green;
+    align-items: center;
+    /* border:1px solid black;  */
 }
-
 .divNasa input{
     width: 20%;
     align-items: center;
@@ -20,19 +21,66 @@
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 0px;
 }
 .divNasa p{
-    color: white;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding: 10px;
-    font-size: 0.9rem;
+    padding:10px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    /* border: 1px solid red; */
 }
 .divNasa img{
     margin-top: 20px;
-    width:70%;
-    height:100vh;
+    width:95%;
+    max-height:700px;
     border-radius:15px;
 }
+}
+@media(min-width:320px) and (max-width:768px){
+
+    .divNasa{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width:100%;
+        color: black;
+        font-size: 1rem;
+        gap: 10px;
+        border-radius:0px;
+        object-fit: cover;
+        align-items: center;
+        /* border:1px solid black;  */
+    }
+    .divNasa input{
+        width: 40%;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    .divNasa p{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 20px;
+        padding:10px;
+        color: black;
+        font-weight: 600;
+        font-size: 0.8rem;
+        /* border: 1px solid red; */
+    }
+    .divNasa img{
+        margin-top: 20px;
+        width:95%;
+        height:70vh;
+        border-radius:15px;
+    }
+} 

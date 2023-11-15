@@ -2,12 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect  } from 'react';
 import './Nasa.css';
-
 const Nasa = () => {
     const today = new Date(Date.now()).toISOString().slice(0, 10);
     const [date, setDate] = useState('') 
     const [picture, setPicture] = useState([])
-    console.log('TODAY/HOY: ', today)
+   
    // Almacenamos en una constante la URL de la NASA
    const NASA_URL = "https://api.nasa.gov/"; 
    // Almacenamos en una constante nuestra API Key, esto es recomendable almacenarlo en una variable de entorno
@@ -21,10 +20,10 @@ useEffect(()=> {
         return{
             ...pictureJson,
             date: pictureJson.date,
-            explanation:pictureJson.explanation,
             title:pictureJson.title,
             hdurl:pictureJson.url,
-            copyright:pictureJson.copyright
+            explanation:pictureJson.explanation,
+            copyright:pictureJson.copyright,
         }
     }      
     getNasaPicture().then((picture)=> setPicture([picture]))
@@ -40,26 +39,23 @@ useEffect(()=> {
   };
     return (
         <div className='divNasa'>
-         <h1>APOD</h1>
-         <h2> Imágen Astrnómica del día</h2>
-         <h3>Esta imágen corresponde con la fecha:  {today}</h3>
-         <input type="date" 
+            <p>Puedes elegir una fecha específica para explorar la APOD👩‍🚀 que se destacó en ese día</p>
+         <input type="date"        
             value={date}
             // eslint-disable-next-line react/no-unknown-property
             onChange = {handleDateChange}
             max={today}
             />   
-            {               
-            picture.map((p)=>(
+            <p>La siguiente imágen corresponde al día de hoy (año, mes, día) {today}</p>
+            {picture.map((p)=>(
                 <div key={p.date}>
                     <img src={p.hdurl} alt={p.title} />
                     <p>{p.copyright}</p>
-                    <h2>{p.title}</h2>
-                    <p>{p.explanation}</p>
+                    <h3> Foto titulada : {p.title}</h3>
+                    <h4>Aquí tienes una breve explicaión de la imágen:</h4>
+                    <p>{p.explanation}</p>  
                 </div>
-            ) 
-            )
-        }   
+                ))}   
     </div>
     )
     // eslint-disable-next-line no-unreachable
