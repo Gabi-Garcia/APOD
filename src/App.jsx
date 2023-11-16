@@ -4,7 +4,7 @@
 import './App.css'
 import Inicio from './components/nasa/Inicio'
 import Nasa from'./components/nasa/Nasa'
-import Footer from './components/nasa/footer'
+import Footer from './components/nasa/Footer'
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
       { <Inicio />}
       { <Nasa />}
       { <Footer />}
-
     </div>
     </>
     
