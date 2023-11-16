@@ -2,7 +2,7 @@
 import React from 'react'
 import './Inicio.css'
 
-export const Inicio = () => {
+ const Inicio = () => {
   return (
     <>
             <div className='img'>
@@ -20,3 +20,4 @@ export const Inicio = () => {
     </>
   )
 }
+export default Inicio
