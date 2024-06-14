@@ -5,8 +5,10 @@ import './Inicio.css'
  const Inicio = () => {
   return (
     <>
-            <div className='img'>
+            <div className='cajaArriba'>
+                 {/* <div className='cajaImg'>
                 <img src="/observacion.png" alt="title icon" />   
+                 </div> */}
               <h1>La Belleza del Cosmos</h1>
             </div>
         <div className='inicio'>

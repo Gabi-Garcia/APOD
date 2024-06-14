@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 // eslint-disable-next-line no-unused-vars
-import NavLink from 'react-router-dom'
+// import NavLink from 'react-router-dom'
+
 import './Footer.css'
 
  const Footer = () => {
@@ -32,7 +33,7 @@ import './Footer.css'
           </a>
         </li>      
       </ul>
-      <p>©️Creado por Gabi-Garcia</p>
+      <p>Creado por Gabi-Garcia</p>
     </footer>
     
     </>

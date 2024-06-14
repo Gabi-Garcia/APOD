@@ -1,11 +1,13 @@
-  /****footer****/
+  /**************************************************************************************************************/
+  /*********************************************MEDIA QUERY: 769px a 1500px**************************************/
+  /**************************************************************************************************************/
   @media(min-width:769px) and (max-width:1500px) {
   footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width:100%;
-    margin-top:100px;
+    margin-top:250px;
     padding:0px;
     /* border: 1px solid red; */
   }
@@ -14,14 +16,15 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    /* border: 1px solid yellow; */
   }
   footer ul li{
     display: flex;
     flex-wrap: wrap;
   }
   footer ul li a .imgFooter{
-    width:40px;
-    height:40px;
+    width:20px;
+    height:20px;
   }
   footer ul li a .imgFooter img{
     width:100%;
@@ -29,18 +32,22 @@
     border-radius: 5px;
   }
   footer p{
-    justify-content: center;
-    margin-left:30px;
-    margin-top:15px;
+    width: 50%;
+    margin: auto;
     display: flex;
-    border-radius: 5px;
-    padding:1%;
-    font-size: 1.1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left:50px;
+    font-size: 1rem;
     /* border: 1px solid black; */
   }
 }
-  /*MEDIA QUERY MOBILE*/
-/*MEDIA QUERY MOBILE FIRST*/
+
+/**************************************************************************************************************************/
+/*********************************************MEDIA QUERY MOBILE, TABLET: 320px a 768px*********************************/
+/*************************************************************************************************************************/
 @media(min-width:320px) and (max-width:768px) {
 /****footer****/
 footer{
@@ -48,11 +55,11 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    margin-top:40px;
+    margin-top:140px;
     padding:0px;
   }
   footer ul{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -66,8 +73,8 @@ footer{
     flex-wrap: wrap;
   }
   footer ul li a .imgFooter{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   footer ul li a .imgFooter img{
     width:100%;
@@ -79,8 +86,8 @@ footer{
     margin-top:10px;
     display: flex;
     border-radius: 5px;
-    padding:2%;
+    padding:0;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
